@@ -1,0 +1,8 @@
+# NT Training — Code Owners
+# Buddy нь өөрийн trainee-ийн хавтасны PR бүрт автоматаар reviewer болно.
+# new-trainee.sh скрипт шинэ мөр автоматаар нэмнэ — гараар засах хэрэггүй.
+#
+# Формат: trainee/nt-[username]/   @buddy-github-handle
+#
+# Жишээ:
+# trainee/nt-bat/   @saran

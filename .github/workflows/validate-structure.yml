@@ -1,0 +1,19 @@
+name: Validate Training Structure
+
+on:
+  pull_request:
+    branches:
+      - 'trainee/**'
+
+jobs:
+  validate-structure:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run structure validation
+        run: |
+          chmod +x ./validate-structure.sh
+          ./validate-structure.sh
