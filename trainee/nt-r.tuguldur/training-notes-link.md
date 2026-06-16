@@ -1,0 +1,1 @@
+training notes doc => `https://docs.google.com/document/d/1UtdjNf_qqHwOiXR_Hybjz12-gtt15baitx-7NEgb_60/edit?usp=sharing`
