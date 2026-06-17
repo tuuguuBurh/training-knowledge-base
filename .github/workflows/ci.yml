@@ -1,4 +1,4 @@
-name: Weather CLI
+name: Weather CLI CI
 
 on:
   push:
