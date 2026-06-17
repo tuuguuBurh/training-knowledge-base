@@ -10,7 +10,7 @@ on:
       - "trainee/nt-r.tuguldur/projects/weather-cli/**"
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
 
     defaults:
@@ -25,7 +25,22 @@ jobs:
           node-version: 22
 
       - run: npm ci
-
       - run: npm run lint
 
+  build:
+    needs: lint
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: trainee/nt-r.tuguldur/projects/weather-cli
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm ci
       - run: npm run build
