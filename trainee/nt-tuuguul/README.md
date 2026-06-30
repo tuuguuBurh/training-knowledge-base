@@ -25,7 +25,7 @@ Live сайт (GitHub Pages, `main`): <https://tuuguuburh.github.io/training-kno
 
 - Үндсэн branch: `trainee/nt-tuuguul`
 - Buddy: `@nt-dukk`
-- Эхэлсэн огноо: `2026-06-30`
+- Эхэлсэн огноо: `2026-06-15`
 
 ---
 
