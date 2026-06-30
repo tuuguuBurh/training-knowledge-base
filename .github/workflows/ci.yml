@@ -3,11 +3,11 @@ name: Weather CLI CI
 on:
   push:
     paths:
-      - "trainee/nt-r.tuguldur/projects/weather-cli/**"
+      - "trainee/nt-tuuguul/projects/weather-cli/**"
 
   pull_request:
     paths:
-      - "trainee/nt-r.tuguldur/projects/weather-cli/**"
+      - "trainee/nt-tuuguul/projects/weather-cli/**"
 
 jobs:
   lint:
@@ -15,7 +15,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: trainee/nt-r.tuguldur/projects/weather-cli
+        working-directory: trainee/nt-tuuguul/projects/weather-cli
 
     steps:
       - uses: actions/checkout@v4
@@ -33,7 +33,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: trainee/nt-r.tuguldur/projects/weather-cli
+        working-directory: trainee/nt-tuuguul/projects/weather-cli
 
     steps:
       - uses: actions/checkout@v4

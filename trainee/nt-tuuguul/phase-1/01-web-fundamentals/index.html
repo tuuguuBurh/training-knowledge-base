@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Fundamentals</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #f5f5f5;
+    }
+
+    .flow {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Web Fundamentals</h1>
+
+  <section>
+    <h2>Тайлбар</h2>
+
+    <p>
+      Web Fundamentals гэдэг нь веб хэрхэн ажилладагийг ойлгох үндсэн
+      мэдлэгүүд юм. Үүнд Internet, Client-Server архитектур, HTTP/HTTPS,
+      DNS, Domain Name, Hosting, Browser-ийн ажиллагаа, HTML, CSS,
+      JavaScript, API болон Database зэрэг ойлголтууд ордог.
+    </p>
+
+    <p>
+      Жишээлбэл хэрэглэгч URL оруулахад DNS домэйныг IP болгон хөрвүүлж,
+      browser сервер рүү HTTP request илгээнэ. Серверээс ирсэн HTML, CSS,
+      JavaScript-ийг browser render хийж хэрэглэгчид харуулдаг.
+      Эдгээр ойлголтуудыг нийлүүлээд Web Fundamentals гэж нэрлэдэг.
+    </p>
+  </section>
+
+  <section>
+    <h2>Вэб хэрхэн ажилладаг вэ?</h2>
+
+    <ul>
+      <li>
+        Эхлээд хэрэглэгч browser (Chrome, Safari, Firefox гэх мэт) дээр
+        facebook.com шиг domain оруулна.
+      </li>
+
+      <li>
+        Компьютер domain нэрийг ойлгодоггүй тул DNS ашиглан IP хаяг руу
+        хөрвүүлдэг.
+      </li>
+
+      <li>
+        Browser сервертэй TCP/TLS холболт үүсгэж аюулгүй холболт тогтооно.
+      </li>
+
+      <li>
+        Үүний дараа HTTP Request илгээнэ.
+      </li>
+
+      <li>
+        Сервер хүсэлтийг боловсруулж шаардлагатай бол Database-аас өгөгдөл
+        авч HTTP Response буцаана.
+      </li>
+
+      <li>
+        Browser HTML-ийг DOM, CSS-ийг CSSOM болгон боловсруулна.
+      </li>
+
+      <li>
+        Дараа нь Render Tree үүсгэж Layout болон Paint үе шатуудыг хийснээр
+        хуудас хэрэглэгчийн дэлгэц дээр харагдана.
+      </li>
+    </ul>
+
+    <div class="flow">
+      URL → DNS → TCP/TLS → HTTP Request → Server →
+      HTTP Response → Render → User
+    </div>
+  </section>
+
+  <section>
+    <h2>Үндсэн ойлголтууд</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Нэр</th>
+          <th>Утга</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><strong>HTTP</strong></td>
+          <td>
+            HyperText Transfer Protocol. Browser болон server хооронд
+            өгөгдөл дамжуулах үндсэн протокол. Өгөгдлийг шифрлэдэггүй.
+            GET, POST, PUT, DELETE зэрэг method ашигладаг.
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>HTTPS</strong></td>
+          <td>
+            HyperText Transfer Protocol Secure. HTTP-ийн аюулгүй хувилбар
+            бөгөөд SSL/TLS ашиглан өгөгдлийг шифрлэж дамжуулдаг.
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>DNS</strong></td>
+          <td>
+            Domain Name System. Домэйн нэрийг (google.com гэх мэт)
+            IP хаяг руу хөрвүүлдэг систем.
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>IP</strong></td>
+          <td>
+            Internet Protocol Address. Сүлжээнд холбогдсон төхөөрөмж бүрийг
+            ялган таних хаяг. Жишээ нь: 192.168.1.1
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</body>
+</html>
